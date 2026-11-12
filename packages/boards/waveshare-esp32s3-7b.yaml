@@ -58,7 +58,12 @@ esphome:
 
 esp32:
   flash_size: 16MB
-
+  #board: your_board_name  # (or variant: esp32...)
+  framework:
+    type: esp-idf          # works for esp-idf (and arduino where supported)
+    advanced:
+      flash_chip: generic  # Add this line
+      
 logger:
   tx_buffer_size: 2048
   # The one USB-C port goes through a USB-to-UART chip, not the chip's own USB, so the log goes out over UART0, as on
