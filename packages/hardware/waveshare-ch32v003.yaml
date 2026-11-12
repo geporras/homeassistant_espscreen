@@ -16,6 +16,7 @@ i2c:
   sda: GPIO8
   scl: GPIO9
   scan: true
+  frequency: 100000Hz
 
 # Waveshare's CH32V003 is a small microcontroller with its own firmware that answers as an expander at 0x24: eight
 # lines, one PWM output and one ADC. ESPHome has had a component for it since 2026.7.0.
