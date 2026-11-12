@@ -52,3 +52,13 @@ touchscreen:
       number: 1
       mode:
         output: true
+    calibration:
+      x_min: 0
+      x_max: 1024
+      y_min: 0
+      y_max: 600
+    transform:
+      swap_xy: false       # Set to true if axes need to be exchanged
+      mirror_x: false      # Set to true if touch is inverted horizontally
+      mirror_y: false      # Set to true if touch is inverted vertically
+      
